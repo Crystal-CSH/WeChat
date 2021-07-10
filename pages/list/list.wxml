@@ -1,0 +1,13 @@
+<view class="container">
+<block wx:for="{{dataList}}" wx:key="key">
+  <view class="page-section">
+  <!-- 已经变成了弹性列布局，不管是用text还是view都一样 -->
+    <text class="item-name">上传人：{{item.name}}</text>
+    <text class="item-name">上传时间：{{item.time}}</text>
+    <image class="img" src="{{item.imgUrl}}"></image>
+    <image catchtap='deleteImg' data-imgurl="{{item.imgUrl}}"  data-id="{{item._id}}" class="shanchu" src="../../images/delete.png"></image>
+  </view>
+</block>
+<!-- 如果外层还有bindtap，最好是不要让它向外传递，用catchtap -->
+<image src="../../images/fabu.png" catchtap="qufabu" class="fabu"></image>
+</view>
