@@ -1,0 +1,99 @@
+<view class="container">
+  <!-- 搜索 -->
+  <view class="header {{scrollDown?'scrolled':''}}">
+    <view class="location">
+      <image class="icon" src='/imgs/index/icon_location.png'></image>定位中
+    </view>
+    <view class="search" bindtap="tapSearch">
+      <image class="icon" src="/imgs/index/icon_search.png"></image>
+      <i class="fa-home"></i>
+      烤鸭
+    </view>
+  </view>
+  <!-- 滚动条 -->
+<swiper class="swiper" autoplay>
+  <block wx:for="{{banners}}" wx:key="key">
+<swiper-item>
+<image src="{{item.img}}">
+</image>
+</swiper-item>
+</block>
+</swiper>
+<!-- 菜单 -->
+<swiper indicator-dots class="menu-swiper">
+  <swiper-item>
+    <view class="swiper-item">
+    <view class="menu">
+      <image src="/imgs/index/icon_1.jpg"></image>
+      <text>新商家</text>
+    </view>
+    <view class="menu">
+      <image src="/imgs/index/icon_1.jpg"></image>
+      <text>新商家</text>
+    </view>
+    <view class="menu">
+      <image src="/imgs/index/icon_1.jpg"></image>
+      <text>新商家</text>
+    </view>
+    <view class="menu">
+      <image src="/imgs/index/icon_1.jpg"></image>
+      <text>新商家</text>
+    </view>
+  </view>
+  <view class="swiper-item">
+    <view class="menu">
+      <image src="/imgs/index/icon_1.jpg"></image>
+      <text>新商家</text>
+    </view>
+    <view class="menu">
+      <image src="/imgs/index/icon_1.jpg"></image>
+      <text>新商家</text>
+    </view>
+    <view class="menu">
+      <image src="/imgs/index/icon_1.jpg"></image>
+      <text>新商家</text>
+    </view>
+    <view class="menu">
+      <image src="/imgs/index/icon_1.jpg"></image>
+      <text>新商家</text>
+    </view>
+  </view>
+  </swiper-item>
+</swiper>
+<!-- 优惠专区(模板设置) -->
+<view class="section">
+  <view class="section-title">优惠专区</view>
+  <image src="https://img02.hua.com/zhuanti/xingzuo/pc/pc_juxiezuo_banner.png"></image>
+</view>
+<!-- 为你优选(模板设置) -->
+<view class="section">
+  <view class="section-title">为你优选</view>
+  <image src="https://img02.hua.com/zhuanti/birthday/pc/banner_lover.png"></image>
+</view>
+<!-- 特色频道(模板设置) -->
+<view class="section">
+  <view class="section-title">特色频道</view>
+  <image src="https://img02.hua.com/banner/huacai_kangnaixin_180731.jpg"></image>
+</view>
+<!-- 附近商家 -->
+<view class="section">
+  <view class="section-title">附近商家</view>
+  <view class="filters">
+ <view bindtap='tapFilter' data-id='1' class="filter {{filterID==1?'active':''}}">综合排序<text class="v">⬇</text></view>
+ <view bindtap='tapFilter' data-id='2' class="filter {{filterID==2?'active':''}}">销量最高<text class="v">⬇</text></view>
+ <view bindtap='tapFilter' data-id='3' class="filter {{filterID==3?'active':''}}">距离最近<text class="v">⬇</text></view>
+</view>
+</view>
+<!-- 一组数据 -->
+<view class="fujin-list">
+  <navigator url='/pages/shop/shop?id=1'>
+  <image class="img-shops" src='https://img02.hua.com/pc/pimg/flower_banenrFimsorry_190906.jpg'></image>
+</navigator>
+<navigator url='/pages/shop/shop?id=1'>
+  <image class="img-shops" src='https://img02.hua.com/zhuanti/birthday/pc/banner_lover.png'></image>
+</navigator>
+<navigator url='/pages/shop/shop?id=1'>
+  <image class="img-shops" src='https://img02.hua.com/pc/pimg/flower_bannerLove_190906.jpg'></image>
+</navigator>
+</view>
+</view>

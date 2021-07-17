@@ -1,0 +1,26 @@
+<view class="container">
+<view class="header">
+<view class="search">
+<image class="icon" src="/imgs/index/icon_search.png"></image>
+<input placeholder="烤鸭"></input>
+</view>
+<button size="mini" class="yellow">搜索</button>
+</view>
+<view class="result">
+  <scroll-view scroll-y>
+   <view class="shop">
+  <navigatar url="">
+    <image src="https://img02.hua.com/banner/huacai_baihe_190906.jpg"></image>
+  </navigatar>
+   </view>
+   <view class="shop">
+  <navigatar url="">
+    <image src="https://img02.hua.com/pc/pimg/flower_bannerFgreeting_190906.jpg"></image>
+  </navigatar>
+  <navigatar url="">
+    <image src="https://img02.hua.com/pc/pimg/flower_bannerFopen_171019.jpg"></image>
+  </navigatar>
+   </view>
+  </scroll-view>
+</view>
+</view>
